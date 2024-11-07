@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #f8f9fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 70vh;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #f2f2f2;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.user-icon {
+    font-size: 30px;
+    background-color: #8d448b;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+i {
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.main-box h3 {
+    color: #8d448b;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    border: none;
+}
+
+.remember-forget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.remember-forget label input {
+    accent-color: #8d448b;
+    margin-right: 10px;
+}
+
+label.accent {
+    color: #8d448b;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.remember-forget a {
+    color: #8d448b;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+    .btn {
+        width: 80%;
+        height: 55px;
+        background-color: #8d448b;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        font-size: 15px;
+        margin-top: 20px; /* Added space above button */
+    }
+    
+    .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .input-field input {
+        padding: 12px;
+    }
+
+    .main-box h3 {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .user-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    i {
+        top: 18px;
+        left: 18px;
+    }
+
+    .main-box h3 {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .input-field input {
+        padding: 10px;
+    }
+
+    .remember-forget {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .remember-forget a {
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        height: 45px;
+        font-size: 13px;
+    }
+}
